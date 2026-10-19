@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="One of you is lying. Two party games, one phone, and a room full of suspects.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Imposter">
+  <title>IMPOSTER — One of you is lying.</title>
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <script src="data/classicWords.js" defer></script>
+  <script src="data/questionPairs.js" defer></script>
+  <script src="engine.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <header class="site-header"><a class="brand" href="#" aria-label="Imposter home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 29 26H3Z"/><path d="M16 11v7m0 4v1"/></svg><span>IMPOSTER<span class="brand-dot">.</span></span></a><span class="header-label">A GAME OF GOOD LIARS</span><span class="header-dot" aria-hidden="true"></span></header>
+  <main id="app"></main>
+  <footer><span>ONE PHONE. NO ALIBIS.</span><span class="footer-mark" aria-hidden="true">✦</span><span>BETTER WITH FRIENDS.</span></footer>
+  <dialog id="confirm-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><span class="eyebrow">THE MOMENT OF TRUTH</span><h2 id="dialog-title">Ready to reveal?</h2><p>Make your final guesses first. This will reveal the Imposter and everyone’s assignment.</p><button class="primary" id="confirm-yes">REVEAL RESULTS <span aria-hidden="true">↗</span></button><button class="text-button" id="confirm-no">KEEP DISCUSSING</button></div></dialog>
+  <noscript>This game needs JavaScript. Enable it in your browser to play.</noscript>
+</body>
+</html>
